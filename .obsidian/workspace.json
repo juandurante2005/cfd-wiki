@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9463cf2e0d9abfcf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Introduction and Main Page.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "85dc60ef45059135",
             "type": "leaf",
             "state": {
@@ -28,16 +16,6 @@
                 "file": "Setting up a basic mesh.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "5ece1c8e07c16b96",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.16"
               }
             }
           }
@@ -107,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Introduction and Main Page.md",
+                "file": "Setting up a basic mesh.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Introduction and Main Page.md",
+                "file": "Setting up a basic mesh.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Introduction and Main Page.md"
+                "file": "Setting up a basic mesh.md"
               }
             }
           },
@@ -178,14 +156,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9463cf2e0d9abfcf",
+  "active": "85dc60ef45059135",
   "lastOpenFiles": [
+    "Pictures/Pasted image 20231113195714.png",
     "Setting up a basic mesh.md",
-    "Pasted image 20231113202123.png",
-    "Pasted image 20231113201308.png",
+    "Default Controls.md",
+    "Pictures/Pasted image 20231118151917.png",
+    "Pictures/Pasted image 20231113195631.png",
+    "Pictures",
+    "Pictures/Pasted image 20231118151634.png",
+    "Pasted image 20231118151551.png",
     "Introduction and Main Page.md",
-    "Pasted image 20231113195714.png",
-    "Pasted image 20231113195631.png",
+    "Pictures/Pasted image 20231113202123.png",
+    "Pictures/Pasted image 20231113201308.png",
     "cfd-wiki/Introduction and Main Page.md"
   ]
 }

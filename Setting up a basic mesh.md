@@ -25,4 +25,22 @@ Now, go through the individual part surfaces, clicking them on the body or on th
 ![[Pasted image 20231113202123.png]]
 *Example set of surfaces*
 
-Next, set up the fluid domain
+#### Fluid Domain and Region Preparation
+
+Next, set up the fluid domain. Typically, a sphere of radius 20 times the rocket body is used. So make a new Sphere Part (right click Parts --> Sphere), centered at the origin or otherwise on/as near to the rocket body as possible.
+
+Then, multi-select the "Body 1" and the "Sphere" parts, right-click and select Boolean --> Subtract, and use CAD subtraction with the target part being the sphere. This will help form the mesh, allowing the rocket body and its parts to be interpreted as [[boundaries]]. From there right click your new "Subtract" object (It's recommended to rename it Domain, Fluid Domain, etc.) and select "Assign Parts to Regions"
+![[Pasted image 20231118151634.png]]
+
+
+Be sure to leave the first setting as-is, and to set the second to "Create a Boundary for Each Part Surface". This will help you add [[Surface Controls]] later, and also get individual diagnostics on all of the surfaces that we defined earlier. 
+
+
+Once your Region is made, we are ready to make a mesh! Under the Parts menu, right-click Operations and make a new Automated Mesh (in the Mesh category). Select your fluid domain as the part, and enable the Surface Remesher, Trimmed Cell Mesher, and Prism Layer Mesher settings. Automatic Surface Repair is optional and will not be used in this tutorial. (If you're curious about the other types, see [[Mesh Geometries]]).
+![[Pasted image 20231118151917.png]]
+
+#### Basic Mesh Configuration
+
+Feel free to poke around these settings (and read [[Mesh Controls]] for more info), but for this intro tutorial, we won't modify more than the basics. 
+
+First, look at the [[Prism Layers]] settings (under [[Default Controls]]) and change the Thickness from "Relative to base" to Absolute. The thickness is impacted by the boundary layer thickness, and we don't want it to depend on the base size, which we may alter a lot. For this model, set the thickness to around 1-1.5 cm. In reality, you can use the tools found in the `tools` folder of the FS files to get accurate boundary layer thicknesses and other run-conditions (see [[Running your simulation]]). 
